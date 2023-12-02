@@ -1,3 +1,4 @@
+import 'package:chengenotifier/models/counter.dart';
 import 'package:chengenotifier/models/homepage.dart';
 import 'package:chengenotifier/models/textfiuld.dart';
 import 'package:flutter/material.dart';
@@ -10,10 +11,7 @@ class Buttomnavigeshenbar extends StatefulWidget {
 }
 
 class _ButtomnavigeshenbarState extends State<Buttomnavigeshenbar> {
-  List listbottombar = [
-    const Homepage(),
-    Textfiuldpage(),
-  ];
+  List listbottombar = [const Homepage(), Textfiuldpage(), Counter()];
 
   int indexnavigetion = 0;
 
@@ -32,6 +30,7 @@ class _ButtomnavigeshenbarState extends State<Buttomnavigeshenbar> {
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.playlist_add_circle_sharp), label: 'fiuld'),
+            BottomNavigationBarItem(icon: Icon(Icons.add), label: 'add')
           ]),
     );
   }
