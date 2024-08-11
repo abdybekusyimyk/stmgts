@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vet_digital/src/modules/counter/counter.dart';
 
-
 class CounterPage extends StatelessWidget {
   const CounterPage({super.key});
 
@@ -22,7 +21,7 @@ class CounterView extends StatelessWidget {
   Widget build(BuildContext context) {
     // final l10n = context.l10n;
     return Scaffold(
-      appBar: AppBar(title:const Text('')),
+      appBar: AppBar(title: const Text('')),
       body: const Center(child: CounterText()),
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -50,6 +49,6 @@ class CounterText extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final count = context.select((CounterCubit cubit) => cubit.state);
-    return Text('$count', style: theme.textTheme.headline1);
+    return Text('$count', style: theme.textTheme.bodyLarge);
   }
 }
