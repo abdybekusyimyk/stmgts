@@ -17,7 +17,7 @@ class HomeWorkView extends StatefulWidget {
 }
 
 class _HomeWorkViewState extends State<HomeWorkView> {
-  final carouselcontroller = CarouselController();
+  final carouselcontroller = CarouselControllerImpl();
 
   final List<String> images = [
     "images/homework.png",
